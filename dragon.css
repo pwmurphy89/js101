@@ -1,3 +1,8 @@
+
+h2 {
+	text-align: center;
+}
+
 img {
 
 	margin: auto;
@@ -7,7 +12,19 @@ img {
 	position: relative;
 }
 
+#container{
+	margin: auto;
+	text-align: center;
+
+}
+
+body {
+	margin: auto;
+	max-width: 960px;
+}
+
 #dragon {
+	width: 100%;
 	position: relative;
 	top: 0px;
 	left: 0px;

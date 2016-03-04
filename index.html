@@ -4,15 +4,17 @@
 	<h2>FIGHT THE DRAGON</h2>
 	<P>If you choose to fight, you must roll a 9 or higher or you will be burnt to a crisp!</P>
 	<link rel="stylesheet" type="text/css" href="dragon.css">
+
 </head>
 <body>
-
+	<div id="container">
 
 	<div id="the-fight">
 
 
 
 		<div class="pics">
+			<div id="message"></div>
 			<div id="dragon">
 				<img src="dice-img/dragon.png">
 			</div>
@@ -28,62 +30,13 @@
 
 	</div>
 
+	</div>
+
 		<input type="button" onclick="throwDice();" value="Fight the dragon!">
 
 		<input type="button" onclick="run();" value="I'm out!!">
 
-<script type ="text/javascript">
-
-//A Property has no parenthesis.
-//A method/fuction has parenthesis. 
-
-// Printing stuff
-// alert("Hello, World");
-//console.log("Hello");
-
-// document.write("Hello, World");
-
-//Object that is a person
-
-// console.dir(window);
-
-// do {
-  // var yourName = prompt("Who are you?");
-// } while (!yourName);
-// console.log(yourName);
-
-// for (var i = 99; i > 0; i--) {
-// 	console.log( i + "bottles of beer on the wall");
-// }
-
-
-function throwDice() {
-	var randomDie = Math.round(Math.random()*5) + 1;
-
-	var imageName = "dice-img/d" + randomDie + ".gif";
-	console.log(imageName);
-	document.images['myDie1'].src = imageName;
-
-	var randomDie2 = Math.round(Math.random() * 5) + 1;
-	var imageName2 = "dice-img/d" + randomDie2 + ".gif";
-	document.images['myDie2'].src = imageName2;
-	console.dir(document.images);
-var dieTotal = randomDie + randomDie2;
-	if (dieTotal <= 9){
-		alert("Sorry, you died!")
-
-	}
-
-}
-
-
-function run() {
-	document.getElementById("dragon").style.visibility = "hidden";
-	document.getElementById("fleeing").style.visibility = "visible";
-}
-
-
-	</script>
+		<script type="text/javascript" src="script.js"></script>
 
 
 </body>
