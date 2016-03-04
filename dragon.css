@@ -1,0 +1,25 @@
+img {
+
+	margin: auto;
+}
+
+.pics {
+	position: relative;
+}
+
+#dragon {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+
+}
+
+
+#fleeing {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
