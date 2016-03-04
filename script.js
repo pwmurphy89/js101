@@ -1,7 +1,7 @@
 
 
 
-getElementById("message").alert("There's a dragon!");
+// getElementById("message").alert("There's a dragon!");
 
 function throwDice() {
 
@@ -17,7 +17,9 @@ function throwDice() {
 	document.images['myDie2'].src = imageName2;
 	console.dir(document.images);
 var dieTotal = randomDie + randomDie2;
-
+	if (dieTotal <= 9) {
+		alert("You got burnt! You scored only " + dieTotal)
+	 }
 	
 
 }
